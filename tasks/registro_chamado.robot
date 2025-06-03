@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 Library    OperatingSystem
 Library    Collections
-Library    ExcelLibrary.robot
+Resource    ExcelLibrary.robot
 
 *** Variables ***
 ${BROWSER}            chrome
@@ -112,7 +112,3 @@ Capturar protocolo
 
 Fechar navegador
     Close Browser
-
-Recarregar se necessário
-    # Esse bloco simula a verificação de mais linhas no FOR e recarrega URL se necessário
-    # Como já estamos iterando com FOR, o recarregamento do navegador será automático a cada loop

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on win32)" generated="20250603 14:13:31.435" rpa="false" schemaversion="4">
+<suite id="s1" name="Registro Chamado" source="C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\tasks\registro_chamado.robot">
+<test id="s1-t1" name="Registrar Todos Chamados Visão360" line="38">
+<kw name="Ler Planilha Excel">
+<var>${dados}</var>
+<arg>${EXCEL_PATH}</arg>
+<msg timestamp="20250603 14:13:31.834" level="FAIL">No keyword with name 'Ler Planilha Excel' found.</msg>
+<status status="FAIL" starttime="20250603 14:13:31.834" endtime="20250603 14:13:31.834"/>
+</kw>
+<kw name=":FOR">
+<arg>${linha}</arg>
+<arg>IN</arg>
+<arg>@{dados}</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.835" endtime="20250603 14:13:31.835"/>
+</kw>
+<kw name="\">
+<arg>Abrir navegador e acessar login</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.835" endtime="20250603 14:13:31.835"/>
+</kw>
+<kw name="\">
+<arg>Fazer login</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.835" endtime="20250603 14:13:31.835"/>
+</kw>
+<kw name="\">
+<arg>Aguardar leitura de QR Code</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.835" endtime="20250603 14:13:31.836"/>
+</kw>
+<kw name="\">
+<arg>Inserir código de autenticação</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.837" endtime="20250603 14:13:31.837"/>
+</kw>
+<kw name="\">
+<arg>Consultar CPF da planilha</arg>
+<arg>${linha}[CPF]</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.837" endtime="20250603 14:13:31.837"/>
+</kw>
+<kw name="\">
+<arg>Selecionar conta</arg>
+<arg>${linha}[Conta]</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.838" endtime="20250603 14:13:31.838"/>
+</kw>
+<kw name="\">
+<arg>Selecionar produto cobrança</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.838" endtime="20250603 14:13:31.838"/>
+</kw>
+<kw name="\">
+<arg>Abrir formulário</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.838" endtime="20250603 14:13:31.838"/>
+</kw>
+<kw name="\">
+<arg>Preencher campos do chamado</arg>
+<arg>${linha}</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.838" endtime="20250603 14:13:31.838"/>
+</kw>
+<kw name="\">
+<arg>Confirmar registro</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.839" endtime="20250603 14:13:31.839"/>
+</kw>
+<kw name="\">
+<arg>Capturar protocolo</arg>
+<arg>${linha}</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.839" endtime="20250603 14:13:31.839"/>
+</kw>
+<kw name="\">
+<arg>Fechar navegador</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.839" endtime="20250603 14:13:31.839"/>
+</kw>
+<kw name="\">
+<arg>Recarregar se necessário</arg>
+<status status="NOT RUN" starttime="20250603 14:13:31.839" endtime="20250603 14:13:31.839"/>
+</kw>
+<status status="FAIL" starttime="20250603 14:13:31.817" endtime="20250603 14:13:31.839">No keyword with name 'Ler Planilha Excel' found.</status>
+</test>
+<status status="FAIL" starttime="20250603 14:13:31.435" endtime="20250603 14:13:31.839"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Registro Chamado">Registro Chamado</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20250603 14:13:31.817" level="ERROR">Error in file 'C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\tasks\registro_chamado.robot' on line 5: Resource file 'ExcelLibrary.robot' does not exist.</msg>
+</errors>
+</robot>

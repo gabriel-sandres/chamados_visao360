@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on win32)" generated="20250603 14:08:41.033" rpa="false" schemaversion="4">
+<suite id="s1" name="Registro Chamado" source="C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\tasks\registro_chamado.robot">
+<test id="s1-t1" name="Registrar Todos Chamados Visão360" line="38">
+<kw name="Ler Planilha Excel">
+<var>${dados}</var>
+<arg>${EXCEL_PATH}</arg>
+<msg timestamp="20250603 14:08:41.225" level="FAIL">No keyword with name 'Ler Planilha Excel' found.</msg>
+<status status="FAIL" starttime="20250603 14:08:41.225" endtime="20250603 14:08:41.225"/>
+</kw>
+<kw name=":FOR">
+<arg>${linha}</arg>
+<arg>IN</arg>
+<arg>@{dados}</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.225" endtime="20250603 14:08:41.225"/>
+</kw>
+<kw name="\">
+<arg>Abrir navegador e acessar login</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.225" endtime="20250603 14:08:41.225"/>
+</kw>
+<kw name="\">
+<arg>Fazer login</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.225" endtime="20250603 14:08:41.225"/>
+</kw>
+<kw name="\">
+<arg>Aguardar leitura de QR Code</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.240" endtime="20250603 14:08:41.240"/>
+</kw>
+<kw name="\">
+<arg>Inserir código de autenticação</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.240" endtime="20250603 14:08:41.240"/>
+</kw>
+<kw name="\">
+<arg>Consultar CPF da planilha</arg>
+<arg>${linha}[CPF]</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.242" endtime="20250603 14:08:41.242"/>
+</kw>
+<kw name="\">
+<arg>Selecionar conta</arg>
+<arg>${linha}[Conta]</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.242" endtime="20250603 14:08:41.242"/>
+</kw>
+<kw name="\">
+<arg>Selecionar produto cobrança</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.242" endtime="20250603 14:08:41.242"/>
+</kw>
+<kw name="\">
+<arg>Abrir formulário</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.243" endtime="20250603 14:08:41.243"/>
+</kw>
+<kw name="\">
+<arg>Preencher campos do chamado</arg>
+<arg>${linha}</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.243" endtime="20250603 14:08:41.243"/>
+</kw>
+<kw name="\">
+<arg>Confirmar registro</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.243" endtime="20250603 14:08:41.243"/>
+</kw>
+<kw name="\">
+<arg>Capturar protocolo</arg>
+<arg>${linha}</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.243" endtime="20250603 14:08:41.243"/>
+</kw>
+<kw name="\">
+<arg>Fechar navegador</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.244" endtime="20250603 14:08:41.244"/>
+</kw>
+<kw name="\">
+<arg>Recarregar se necessário</arg>
+<status status="NOT RUN" starttime="20250603 14:08:41.244" endtime="20250603 14:08:41.244"/>
+</kw>
+<status status="FAIL" starttime="20250603 14:08:41.225" endtime="20250603 14:08:41.244">No keyword with name 'Ler Planilha Excel' found.</status>
+</test>
+<status status="FAIL" starttime="20250603 14:08:41.033" endtime="20250603 14:08:41.245"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Registro Chamado">Registro Chamado</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20250603 14:08:41.033" level="ERROR">Error in file 'C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\tasks\registro_chamado.robot' on line 116: Creating keyword 'Recarregar se necessário' failed: User keyword cannot be empty.</msg>
+<msg timestamp="20250603 14:08:41.225" level="ERROR">Error in file 'C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\tasks\registro_chamado.robot' on line 5: Importing library 'ExcelLibrary.robot' failed: ModuleNotFoundError: No module named 'ExcelLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\venv\Scripts\robot.exe
+  C:\Users\gabriel.sandres\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\gabriel.sandres\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\gabriel.sandres\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\gabriel.sandres\AppData\Local\Programs\Python\Python311
+  C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\venv
+  C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\venv\Lib\site-packages
+  C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\venv\Lib\site-packages\win32
+  C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\venv\Lib\site-packages\win32\lib
+  C:\Users\gabriel.sandres\OneDrive - Sicoob\Área de Trabalho\registro_robot\chamados_visao360\venv\Lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
